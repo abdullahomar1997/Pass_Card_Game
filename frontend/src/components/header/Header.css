@@ -1,0 +1,28 @@
+header {
+  background: var(--color-bg);
+  display: grid;
+  grid-template-columns: 70px 70px auto 70px;
+  align-content: center;
+  font-size: 1.5rem;
+  height: 5vh;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  /* border: 0.1rem solid var(--color-primary-variant); */
+}
+
+.header__icon {
+  /* border: 0.1rem solid var(--color-primary-variant); */
+  text-align: center;
+}
+
+.header__text {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 0.5rem; */
+  font-size: 1rem;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+
+  /* margin-top: 0.3rem; */
+}
