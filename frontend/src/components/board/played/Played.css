@@ -1,33 +1,22 @@
-.game {
-  display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
-  grid-template-columns: repeat(4, auto);
-  /* grid-template-rows: repeat(13, 15vh); */
-  /* grid-gap: 10px; */
-  /* justify-content: center; */
-  margin-top: 10px;
-}
-
 .mainBlock {
   display: grid;
-  /* background-color: white; */
   grid-template-columns: repeat(4, 1fr);
-  /* grid-template-rows: repeat(13, 15vh); */
-
-  /* grid-template-rows: repeat(13, 7vw); */
-  border-radius: 5px;
   box-sizing: border-box;
-  /* width: 30vw; */
-  height: 65vh;
   grid-column-gap: 10px;
-  margin: 0rem auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   overflow: scroll;
+  background-color: brown;
+  border-radius: 1rem;
+  padding: 1rem 5rem;
+  /* border: 0.5rem solid var(--color-primary-variant); */
 }
 
 .mainBlock2 {
   display: grid;
+  /* height: 70vh; */
   grid-template-columns: 35vw 30vw 35vw;
+  border: 0.2rem solid var(--color-primary-variant);
+
 }
 
 .userBlock {
@@ -44,11 +33,26 @@
 }
 
 .card > img {
-  max-width: 100%;
-  max-height: 100%;
+  --card-width: 10vh;
+
+  width: var(--card-width);
+  height: calc(var(--card-width) * 1.5);
+
+  box-shadow: 2px 2px 2px 2px #00000077;
+  border-radius: 5px;
 }
 
 /* .pass_card {
   height: 175px;
   width: 125px;
 } */
+
+.game {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  grid-template-columns: repeat(4, auto);
+  /* grid-template-rows: repeat(13, 15vh); */
+  /* grid-gap: 10px; */
+  /* justify-content: center; */
+  /* margin-top: 10px; */
+}

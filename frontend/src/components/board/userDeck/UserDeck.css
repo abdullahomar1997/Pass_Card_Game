@@ -1,36 +1,37 @@
-/* .your__cards {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  bottom: 0px;
-  height: 20vh;
-  width: 100vw;
-  border: 0.1rem solid var(--color-primary-variant);
-} */
-
-.your__cards {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  bottom: 0px;
-  height: 15vh;
-  width: 100vw;
-  border: 0.1rem solid var(--color-primary-variant);
-}
-
-.your__cards > div:first-of-type {
-  margin-left: 1px;
+.player_1 {
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(14, 15px);
 }
 
 .userCard > img {
-  max-width: 100%;
-  max-height: 100%;
+
+  --card-width: 10vh;
+
+  width: var(--card-width);
+  height: calc(var(--card-width) * 1.5);
+
+  box-shadow: 2px 2px 2px 2px #00000077;
+  border-radius: 5px;
 }
 
-.leftlap {
-  margin-left: -4%;
+.player_2 {
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(14, 15px);
+  /* transform: rotate(180deg); */
 }
 
-.bottom_right {
-  right: 0px;
+.player_3 {
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(14, 15px);
+  transform: rotate(90deg);
+}
+
+.player_4 {
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(14, 15px);
+  transform: rotate(90deg);
 }

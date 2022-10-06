@@ -1,10 +1,10 @@
 import React from "react";
 import updateDeck from "../../../utils/updateDeck";
-import "./UserDeck.css";
+import "./UserDeck2.css";
 
 let updatedDeck;
 
-const UserDeck = ({ boardDeck, setBoardDeck, players, setPlayers,classN,showCards }) => {
+const UserDeck2 = ({ boardDeck, setBoardDeck, players, setPlayers,classN,showCards }) => {
   const OnCardPlayedHandler = (card) => {
     console.log(players);
     if (card.isPlayable) {
@@ -90,4 +90,4 @@ const UserDeck = ({ boardDeck, setBoardDeck, players, setPlayers,classN,showCard
   );
 };
 
-export default UserDeck;
+export default UserDeck2;

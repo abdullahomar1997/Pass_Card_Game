@@ -1,6 +1,6 @@
 import React from "react";
 import User from "../user/User";
-import UserDeck from "../userDeck/UserDeck";
+// import UserDeck from "../userDeck/UserDeck";
 import "./Played.css";
 
 const Played = ({ boardDeck, players }) => {
@@ -18,12 +18,12 @@ const Played = ({ boardDeck, players }) => {
   const countNumberOfPasses = () => {};
 
   return (
-    <div className="mainBlock2">
-      <div className="userBlock">
-        {players.map((player) => {
-          return <User player={player} />;
-        })}
-      </div>
+    // <div className="mainBlock2">
+    //   <div className="userBlock">
+    //     {players.map((player) => {
+    //       return <User player={player} />;
+    //     })}
+    //   </div>
 
       <div className="mainBlock">
         {boardDeck.map((card) => (
@@ -36,8 +36,8 @@ const Played = ({ boardDeck, players }) => {
           </div>
         ))}
       </div>
-      <div className="logBlock"></div>
-    </div>
+    //   <div className="logBlock"></div>
+    // </div>
   );
 };
 

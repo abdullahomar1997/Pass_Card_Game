@@ -23,13 +23,50 @@ const Board = () => {
 
   return (
     <div className="container board__container">
-      <Played players={players} boardDeck={boardDeck} />
-      <MyDeck
+     
+     <div className="player1">
+       <MyDeck
         boardDeck={boardDeck}
         setBoardDeck={setBoardDeck}
         players={players}
         setPlayers={setPlayers}
+        classN={"player_1"}
+        showCards={true}
       />
+     </div>
+     <div className="player2">
+     <MyDeck
+        boardDeck={boardDeck}
+        setBoardDeck={setBoardDeck}
+        players={players}
+        setPlayers={setPlayers}
+        classN={"player_2"}
+        showCards={false}
+      />
+     </div>
+     <div className="player3">
+     <MyDeck
+        boardDeck={boardDeck}
+        setBoardDeck={setBoardDeck}
+        players={players}
+        setPlayers={setPlayers}
+        classN={"player_3"}
+        showCards={false}
+      />
+     </div>
+     <div className="player4">
+     <MyDeck
+        boardDeck={boardDeck}
+        setBoardDeck={setBoardDeck}
+        players={players}
+        setPlayers={setPlayers}
+        classN={"player_4"}
+        showCards={false}
+      />
+     </div>
+     <div className="played">
+      <Played players={players} boardDeck={boardDeck} />
+     </div>
     </div>
   );
 };
