@@ -4,7 +4,7 @@ import "./UserDeck.css";
 
 let updatedDeck;
 
-const UserDeck = ({ boardDeck, setBoardDeck, players, setPlayers,classN}) => {
+const CpuDeck = ({ boardDeck, setBoardDeck, players, setPlayers,classN}) => {
   const OnCardPlayedHandler = (card) => {
     console.log(players);
     if (card.isPlayable) {
@@ -60,19 +60,18 @@ const UserDeck = ({ boardDeck, setBoardDeck, players, setPlayers,classN}) => {
         .filter((c) => c.player === "0")
         .map((card) => (
           <div
-            className="userCard"
+            className="cpuCard"
             onClick={() => OnCardPlayedHandler(card)}
           >
-              <img
-              style={{ visibility: card.userCardVisibility }}
-              src={require(`../../../assets/deck/${card.cardName}`)}
+            <img
+              src={require(`../../../assets/deck/pass.png`)}
               alt="me"
             />
           </div>
         ))}
 
       <div
-        className="userCard bottom_right"
+        className="cpuCard"
         onClick={() => OnPassPlayedHandler()}
       >
         <img src={require(`../../../assets/deck/pass.png`)} alt="pass" />
@@ -81,4 +80,4 @@ const UserDeck = ({ boardDeck, setBoardDeck, players, setPlayers,classN}) => {
   );
 };
 
-export default UserDeck;
+export default CpuDeck;

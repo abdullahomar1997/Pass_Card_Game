@@ -5,6 +5,7 @@ import Played from "./played/Played";
 import cards from "../../constants/cards";
 import assignCards from "../../utils/assignCards";
 import createPlayers from "../../utils/createPlayers";
+import CpuDeck from "./userDeck/CpuDeck";
 
 const Board = () => {
   let numberOfPlayers = 4;
@@ -31,39 +32,39 @@ const Board = () => {
         players={players}
         setPlayers={setPlayers}
         classN={"player_1"}
-        showCards={true}
       />
      </div>
+
      <div className="player2">
-     <MyDeck
+     <CpuDeck
         boardDeck={boardDeck}
         setBoardDeck={setBoardDeck}
         players={players}
         setPlayers={setPlayers}
         classN={"player_2"}
-        showCards={false}
       />
      </div>
+
      <div className="player3">
-     <MyDeck
+     <CpuDeck
         boardDeck={boardDeck}
         setBoardDeck={setBoardDeck}
         players={players}
         setPlayers={setPlayers}
         classN={"player_3"}
-        showCards={false}
       />
      </div>
+
      <div className="player4">
-     <MyDeck
+     <CpuDeck
         boardDeck={boardDeck}
         setBoardDeck={setBoardDeck}
         players={players}
         setPlayers={setPlayers}
         classN={"player_4"}
-        showCards={false}
       />
      </div>
+
      <div className="played">
       <Played players={players} boardDeck={boardDeck} />
      </div>
