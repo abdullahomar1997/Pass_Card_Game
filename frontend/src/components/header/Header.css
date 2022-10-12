@@ -7,9 +7,10 @@ header {
   height: 60px;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  width: 100vw;
+  max-width: 100%;
   /* border: 0.1rem solid var(--color-primary-variant); */
 }
-
 .header__icon {
   /* border: 0.1rem solid var(--color-primary-variant); */
   text-align: center;

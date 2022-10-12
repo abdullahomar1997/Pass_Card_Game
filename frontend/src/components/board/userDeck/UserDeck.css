@@ -1,12 +1,12 @@
 .player_1 {
   display: grid;
   grid-gap: 0.5rem;
-  grid-template-columns: repeat(14, 15px);
+  grid-template-columns: repeat(7, 10vh);
+  
 }
 
 .userCard > img {
-
-  --card-width: 10vh;
+  --card-width: calc(100vw / 9);
 
   width: var(--card-width);
   height: calc(var(--card-width) * 1.5);
@@ -16,8 +16,19 @@
 
   /* transition: transform 500ms; */
 
-  transition: all 0.1s ease-in-out; 
+  transition: all 0.1s ease-in-out;
+}
 
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+  .player_1 {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    /* justify-content: flex-end; */
+    /* flex-direction: row-reverse; */
+    /* align-self: center; */
+  }
 }
 
 .userCard:hover {
@@ -27,24 +38,20 @@
   cursor: pointer;
 }
 
-
 .cpuCard > img {
-
-  --card-width: 10vh;
+  /* --card-width: 10vh;
 
   width: var(--card-width);
   height: calc(var(--card-width) * 1.5);
 
   box-shadow: 2px 2px 2px 2px #00000077;
-  border-radius: 5px;
-
-
+  border-radius: 5px; */
 }
 
 .player_2 {
-  display: grid;
+  /* display: grid;
   grid-gap: 0.5rem;
-  grid-template-columns: repeat(14, 15px);
+  grid-template-columns: repeat(14, 15px); */
   /* transform: rotate(180deg); */
 }
 
