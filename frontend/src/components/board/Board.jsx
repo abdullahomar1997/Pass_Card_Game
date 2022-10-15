@@ -24,50 +24,49 @@ const Board = () => {
 
   return (
     <div className="container board__container">
-     
-     <div className="player1">
-       <MyDeck
-        boardDeck={boardDeck}
-        setBoardDeck={setBoardDeck}
-        players={players}
-        setPlayers={setPlayers}
-        classN={"player_1"}
-      />
-     </div>
+      <div className="player1">
+        <MyDeck
+          boardDeck={boardDeck}
+          setBoardDeck={setBoardDeck}
+          players={players}
+          setPlayers={setPlayers}
+          classN={"player_1"}
+        />
+      </div>
 
-     <div className="player2">
-     <CpuDeck
-        boardDeck={boardDeck}
-        setBoardDeck={setBoardDeck}
-        players={players}
-        setPlayers={setPlayers}
-        classN={"player_2"}
-      />
-     </div>
+      {/* <div className="player2">
+        <CpuDeck
+          boardDeck={boardDeck}
+          setBoardDeck={setBoardDeck}
+          players={players}
+          setPlayers={setPlayers}
+          classN={"player_2"}
+        />
+      </div> */}
 
-     <div className="player3">
-     <CpuDeck
-        boardDeck={boardDeck}
-        setBoardDeck={setBoardDeck}
-        players={players}
-        setPlayers={setPlayers}
-        classN={"player_3"}
-      />
-     </div>
+      {/* <div className="player3">
+        <CpuDeck
+          boardDeck={boardDeck}
+          setBoardDeck={setBoardDeck}
+          players={players}
+          setPlayers={setPlayers}
+          classN={"player_3"}
+        />
+      </div>
 
-     <div className="player4">
-     <CpuDeck
-        boardDeck={boardDeck}
-        setBoardDeck={setBoardDeck}
-        players={players}
-        setPlayers={setPlayers}
-        classN={"player_4"}
-      />
-     </div>
+      <div className="player4">
+        <CpuDeck
+          boardDeck={boardDeck}
+          setBoardDeck={setBoardDeck}
+          players={players}
+          setPlayers={setPlayers}
+          classN={"player_4"}
+        />
+      </div> */}
 
-     <div className="played">
-      <Played players={players} boardDeck={boardDeck} />
-     </div>
+      {/* <div className="played">
+        <Played players={players} boardDeck={boardDeck} />
+      </div> */}
     </div>
   );
 };

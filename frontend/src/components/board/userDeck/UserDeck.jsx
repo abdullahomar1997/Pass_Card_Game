@@ -4,7 +4,7 @@ import "./UserDeck.css";
 
 let updatedDeck;
 
-const UserDeck = ({ boardDeck, setBoardDeck, players, setPlayers,classN}) => {
+const UserDeck = ({ boardDeck, setBoardDeck, players, setPlayers, classN }) => {
   const OnCardPlayedHandler = (card) => {
     console.log(players);
     if (card.isPlayable) {
@@ -59,11 +59,8 @@ const UserDeck = ({ boardDeck, setBoardDeck, players, setPlayers,classN}) => {
       {boardDeck
         .filter((c) => c.player === "0")
         .map((card) => (
-          <div
-            className="userCard"
-            onClick={() => OnCardPlayedHandler(card)}
-          >
-              <img
+          <div className="userCard" onClick={() => OnCardPlayedHandler(card)}>
+            <img
               style={{ visibility: card.userCardVisibility }}
               src={require(`../../../assets/deck/${card.cardName}`)}
               alt="me"

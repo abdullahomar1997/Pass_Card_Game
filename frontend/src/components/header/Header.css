@@ -8,9 +8,12 @@ header {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   width: 100vw;
+<<<<<<< HEAD
+=======
+  max-width: 100%;
+>>>>>>> 8628b9d6cb3cf624a7dbf4ea6ddd0fa5a78f7d8b
   /* border: 0.1rem solid var(--color-primary-variant); */
 }
-
 .header__icon {
   /* border: 0.1rem solid var(--color-primary-variant); */
   text-align: center;

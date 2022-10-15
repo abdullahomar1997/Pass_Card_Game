@@ -1,12 +1,12 @@
 .player_1 {
   display: grid;
   grid-gap: 0.5rem;
-  grid-template-columns: repeat(14, 15px);
+  grid-template-columns: repeat(7, 10vh);
+  
 }
 
 .userCard > img {
-
-  --card-width: 10vh;
+  --card-width: calc(100vw / 9);
 
   width: var(--card-width);
   height: calc(var(--card-width) * 1.5);
@@ -16,8 +16,19 @@
 
   /* transition: transform 500ms; */
 
-  transition: all 0.1s ease-in-out; 
+  transition: all 0.1s ease-in-out;
+}
 
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+  .player_1 {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    /* justify-content: flex-end; */
+    /* flex-direction: row-reverse; */
+    /* align-self: center; */
+  }
 }
 
 .userCard:hover {
@@ -28,13 +39,13 @@
 }
 
 .cpuCard > img {
-
-  --card-width: 10vh;
+  /* --card-width: 10vh;
 
   width: var(--card-width);
   height: calc(var(--card-width) * 1.5);
 
   box-shadow: 2px 2px 2px 2px #00000077;
+<<<<<<< HEAD
   border-radius: 5px;
 }
 
@@ -43,6 +54,15 @@
   /* grid-gap: 0.5rem; */
   grid-template-columns: repeat(14, 15px);
 
+=======
+  border-radius: 5px; */
+}
+
+.player_2 {
+  /* display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(14, 15px); */
+>>>>>>> 8628b9d6cb3cf624a7dbf4ea6ddd0fa5a78f7d8b
   /* transform: rotate(180deg); */
 }
 
@@ -59,6 +79,7 @@
   grid-template-columns: repeat(14, 15px);
   transform: rotate(90deg);
 }
+<<<<<<< HEAD
 
 /* For Mobile devices: 320px-480px
 For Tablets or iPad: 480px - 768px
@@ -120,3 +141,5 @@ For Extra-large size device: 1200px and more */
   }
 
 }
+=======
+>>>>>>> 8628b9d6cb3cf624a7dbf4ea6ddd0fa5a78f7d8b

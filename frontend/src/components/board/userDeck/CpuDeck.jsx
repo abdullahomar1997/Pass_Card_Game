@@ -56,7 +56,7 @@ const CpuDeck = ({ boardDeck, setBoardDeck, players, setPlayers,classN}) => {
 
   return (
     <div className={classN}>
-      {boardDeck
+      {/* {boardDeck
         .filter((c) => c.player === "0")
         .map((card) => (
           <div
@@ -75,7 +75,7 @@ const CpuDeck = ({ boardDeck, setBoardDeck, players, setPlayers,classN}) => {
         onClick={() => OnPassPlayedHandler()}
       >
         <img src={require(`../../../assets/deck/pass.png`)} alt="pass" />
-      </div>
+      </div> */}
     </div>
   );
 };
