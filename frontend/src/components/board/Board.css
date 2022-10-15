@@ -2,11 +2,7 @@
   position: fixed;
   height: calc(100vh - 60px);
   display: grid;
-<<<<<<< HEAD
   width: 100vw;
-=======
-  max-width: 100%;
->>>>>>> 8628b9d6cb3cf624a7dbf4ea6ddd0fa5a78f7d8b
 
   /* background: var(--color-primary); */
   grid-template-columns: 15vh auto 15vh;
@@ -20,22 +16,13 @@
 
 .player1 {
   grid-area: player1;
-<<<<<<< HEAD
   /* justify-self: center; */
-=======
-  justify-self: center;
-  background-color: blueviolet;
->>>>>>> 8628b9d6cb3cf624a7dbf4ea6ddd0fa5a78f7d8b
 }
 
 .player2 {
   grid-area: player2;
   justify-self: center;
-<<<<<<< HEAD
   /* align-self: center; */
-
-=======
->>>>>>> 8628b9d6cb3cf624a7dbf4ea6ddd0fa5a78f7d8b
 }
 
 .player3 {
@@ -56,42 +43,38 @@
   align-self: center;
 }
 
-<<<<<<< HEAD
 /* For Mobile Portrait View */
 @media screen and (max-device-width: 480px) and (orientation: portrait) {
-  .board__container{
+  .board__container {
     /* grid-template-rows: calc((100vw / 7) * 1.5) auto calc((100vw / 7) * 1.5 * 2 ); */
     grid-template-rows: 5vw auto 43vw;
     /* grid-template-columns:  calc((100vw / 7) * 1.5) auto calc((100vw / 7) * 1.5);  */
     /* grid-template-columns:  calc((100vw / 7) * 1.5) auto calc((100vw / 7) * 1.5);  */
-    grid-template-columns: 22vw auto 22vw; 
-    
+    grid-template-columns: 22vw auto 22vw;
   }
 
-  .player1{
+  .player1 {
     /* background-color:brown; */
     /* width: 100vw; */
   }
-  .player2{
-    background-color:aqua;
+  .player2 {
+    background-color: aqua;
     /* width: 100vw; */
   }
-  .player3{
+  .player3 {
     /* background-color:blueviolet;    */
   }
-  .player4{
+  .player4 {
     /* background-color:yellow */
   }
 
-  .played{
+  .played {
     background-color: red;
   }
-  
 }
 
 /* For Mobile Landscape View */
 @media screen and (max-device-width: 640px) and (orientation: landscape) {
-
 }
 
 /* For Tablet View */
@@ -104,12 +87,3 @@
     margin-right: -80%;
   } */
 }
-=======
-/* For Mobile Phones Portrait or Landscape View */
-@media screen and (max-device-width: 640px) {
-  .board__container {
-    background-color: brown;
-    grid-template-rows: 15vh auto 40vh;
-  }
-}
->>>>>>> 8628b9d6cb3cf624a7dbf4ea6ddd0fa5a78f7d8b

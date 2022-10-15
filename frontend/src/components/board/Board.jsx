@@ -34,7 +34,7 @@ const Board = () => {
         />
       </div>
 
-      {/* <div className="player2">
+      <div className="player2">
         <CpuDeck
           boardDeck={boardDeck}
           setBoardDeck={setBoardDeck}
@@ -42,9 +42,9 @@ const Board = () => {
           setPlayers={setPlayers}
           classN={"player_2"}
         />
-      </div> */}
+      </div>
 
-      {/* <div className="player3">
+      <div className="player3">
         <CpuDeck
           boardDeck={boardDeck}
           setBoardDeck={setBoardDeck}
@@ -62,7 +62,7 @@ const Board = () => {
           setPlayers={setPlayers}
           classN={"player_4"}
         />
-      </div> */}
+      </div>
 
       {/* <div className="played">
         <Played players={players} boardDeck={boardDeck} />
