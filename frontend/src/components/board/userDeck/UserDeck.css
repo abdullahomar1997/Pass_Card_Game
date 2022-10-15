@@ -27,7 +27,6 @@
   cursor: pointer;
 }
 
-
 .cpuCard > img {
 
   --card-width: 10vh;
@@ -37,27 +36,87 @@
 
   box-shadow: 2px 2px 2px 2px #00000077;
   border-radius: 5px;
-
-
 }
 
 .player_2 {
   display: grid;
-  grid-gap: 0.5rem;
+  /* grid-gap: 0.5rem; */
   grid-template-columns: repeat(14, 15px);
+
   /* transform: rotate(180deg); */
 }
 
 .player_3 {
   display: grid;
-  grid-gap: 0.5rem;
+  /* grid-gap: 0.5rem; */
   grid-template-columns: repeat(14, 15px);
   transform: rotate(90deg);
 }
 
 .player_4 {
   display: grid;
-  grid-gap: 0.5rem;
+  /* grid-gap: 0.5rem; */
   grid-template-columns: repeat(14, 15px);
   transform: rotate(90deg);
+}
+
+/* For Mobile devices: 320px-480px
+For Tablets or iPad: 480px - 768px
+For Laptop or small-size screen: 768px -1024px
+For Desktop or large-size screen: 1024px -1200px
+For Extra-large size device: 1200px and more */
+
+/* https://screensiz.es/phone */
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  .player_1{
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 0rem;
+    /* width: 100vw; */
+
+  }
+
+  .player_3{
+    margin-left: calc((100vw/7) * 1.5 * -1 * 1.5);
+  }
+
+  .player_2{
+    margin-top: -30%;
+    margin-left: -10px;
+  }
+
+  .player_4{
+    margin-right: calc((100vw/7) * 1.5 * -1 * 1.5);
+  }
+
+  .userCard > img {
+
+    --card-width: calc(100vw/7);
+  
+    width: var(--card-width);
+    height: calc(var(--card-width) * 1.5);
+  
+    box-shadow: 2px 2px 2px 2px #00000077;
+    border-radius: 5px;
+
+    padding: 0.1rem
+  
+  }
+
+  .cpuCard > img {
+
+    --card-width: calc(100vw/7);
+  
+    width: var(--card-width);
+    height: calc(var(--card-width) * 1.5);
+  
+    box-shadow: 2px 2px 2px 2px #00000077;
+    border-radius: 5px;
+
+    padding: 0.1rem
+  
+  }
+
 }

@@ -1,7 +1,8 @@
 .board__container {
-  position: relative;
+  position: fixed;
   height: calc(100vh - 60px);
   display: grid;
+  width: 100vw;
 
   /* background: var(--color-primary); */
   grid-template-columns: 15vh auto 15vh;
@@ -16,12 +17,13 @@
 
 .player1{
   grid-area: player1;
-  justify-self: center
+  /* justify-self: center; */
 }
 
 .player2{
   grid-area: player2;
   justify-self: center;
+  /* align-self: center; */
 
 }
 
@@ -41,4 +43,52 @@
   grid-area: played;
   justify-self: center;
   align-self: center;
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  .board__container{
+    /* grid-template-rows: calc((100vw / 7) * 1.5) auto calc((100vw / 7) * 1.5 * 2 ); */
+    grid-template-rows: 5vw auto 43vw;
+    /* grid-template-columns:  calc((100vw / 7) * 1.5) auto calc((100vw / 7) * 1.5);  */
+    /* grid-template-columns:  calc((100vw / 7) * 1.5) auto calc((100vw / 7) * 1.5);  */
+    grid-template-columns: 22vw auto 22vw; 
+    
+  }
+
+  .player1{
+    /* background-color:brown; */
+    /* width: 100vw; */
+  }
+  .player2{
+    background-color:aqua;
+    /* width: 100vw; */
+  }
+  .player3{
+    /* background-color:blueviolet;    */
+  }
+  .player4{
+    /* background-color:yellow */
+  }
+
+  .played{
+    background-color: red;
+  }
+  
+}
+
+/* For Mobile Landscape View */
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* .player3{
+    margin-left: -150%;
+  }
+
+  .player4{
+    margin-right: -80%;
+  } */
 }

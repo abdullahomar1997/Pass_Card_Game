@@ -26,7 +26,7 @@ const Played = ({ boardDeck, players }) => {
     //   </div>
 
       <div className="mainBlock">
-        {boardDeck.map((card) => (
+        {/* {boardDeck.map((card) => (
           <div className="card overlap">
             <img
               style={{ visibility: card.cardVisibility }}
@@ -34,8 +34,9 @@ const Played = ({ boardDeck, players }) => {
               alt={card.cardName}
             />
           </div>
-        ))}
+        ))} */}
       </div>
+      
     //   <div className="logBlock"></div>
     // </div>
   );
