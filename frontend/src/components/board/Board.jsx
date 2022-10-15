@@ -64,9 +64,9 @@ const Board = () => {
         />
       </div>
 
-      {/* <div className="played">
+      <div className="played">
         <Played players={players} boardDeck={boardDeck} />
-      </div> */}
+      </div>
     </div>
   );
 };

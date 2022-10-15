@@ -18,27 +18,17 @@ const Played = ({ boardDeck, players }) => {
   const countNumberOfPasses = () => {};
 
   return (
-    // <div className="mainBlock2">
-    //   <div className="userBlock">
-    //     {players.map((player) => {
-    //       return <User player={player} />;
-    //     })}
-    //   </div>
-
-      <div className="mainBlock">
-        {/* {boardDeck.map((card) => (
-          <div className="card overlap">
-            <img
-              style={{ visibility: card.cardVisibility }}
-              src={require(`../../../assets/deck/${card.cardName}`)}
-              alt={card.cardName}
-            />
-          </div>
-        ))} */}
-      </div>
-      
-    //   <div className="logBlock"></div>
-    // </div>
+    <div className="mainBlock">
+      {boardDeck.map((card) => (
+        <div className="card overlap">
+          <img
+            style={{ visibility: card.cardVisibility }}
+            src={require(`../../../assets/deck/${card.cardName}`)}
+            alt={card.cardName}
+          />
+        </div>
+      ))}
+    </div>
   );
 };
 

@@ -11,19 +11,6 @@
   /* border: 0.5rem solid var(--color-primary-variant); */
 }
 
-.mainBlock2 {
-  display: grid;
-  /* height: 70vh; */
-  grid-template-columns: 35vw 30vw 35vw;
-  border: 0.2rem solid var(--color-primary-variant);
-
-}
-
-.userBlock {
-  padding: 1rem;
-  /* border: 0.1rem solid var(--color-primary-variant); */
-}
-
 .overlap {
   margin-top: -130%;
 }
@@ -42,17 +29,24 @@
   border-radius: 5px;
 }
 
-/* .pass_card {
-  height: 175px;
-  width: 125px;
-} */
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  .card > img {
+    --card-width: calc(100vw / 7);
 
-.game {
-  display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
-  grid-template-columns: repeat(4, auto);
-  /* grid-template-rows: repeat(13, 15vh); */
-  /* grid-gap: 10px; */
-  /* justify-content: center; */
-  /* margin-top: 10px; */
+    width: var(--card-width);
+    height: calc(var(--card-width) * 1.5);
+
+    box-shadow: 2px 2px 2px 2px #00000077;
+    border-radius: 5px;
+
+    /* padding: 0.1rem; */
+  }
+
+  .mainBlock {
+    padding: 0.5rem 0.5rem;
+    grid-column-gap: 0.5rem;
+
+    /* border: 0.5rem solid var(--color-primary-variant); */
+  }
 }

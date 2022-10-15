@@ -5,8 +5,8 @@ header {
   align-content: center;
   font-size: 1.5rem;
   height: 60px;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  /* padding-top: 0.5rem; */
+  /* padding-bottom: 0.5rem; */
   width: 100vw;
   /* border: 0.1rem solid var(--color-primary-variant); */
 }

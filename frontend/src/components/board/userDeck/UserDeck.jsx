@@ -68,10 +68,7 @@ const UserDeck = ({ boardDeck, setBoardDeck, players, setPlayers, classN }) => {
           </div>
         ))}
 
-      <div
-        className="userCard bottom_right"
-        onClick={() => OnPassPlayedHandler()}
-      >
+      <div className="userCard" onClick={() => OnPassPlayedHandler()}>
         <img src={require(`../../../assets/deck/pass.png`)} alt="pass" />
       </div>
     </div>
