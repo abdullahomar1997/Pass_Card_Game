@@ -26,3 +26,10 @@ header {
 
   /* margin-top: 0.3rem; */
 }
+
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+  header {
+    display: none;
+    background-color: red;
+  }
+}

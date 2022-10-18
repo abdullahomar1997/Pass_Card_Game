@@ -44,7 +44,7 @@ const Header = () => {
       </div>
 
       <div className="header__text">
-        <div>Easy</div>
+        <div>Easfy</div>
         <div></div>
         <div id="countdown"></div>
       </div>

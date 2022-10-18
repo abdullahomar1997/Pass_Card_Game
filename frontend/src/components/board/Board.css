@@ -46,6 +46,7 @@
 /* For Mobile Portrait View */
 @media screen and (max-device-width: 480px) and (orientation: portrait) {
   .board__container {
+    height: calc(100vh - 65px);
     grid-template-rows: calc((100vw / 7) * 1.5 * 0.1) auto calc(
         (100vw / 7) * 1.5 * 2
       );

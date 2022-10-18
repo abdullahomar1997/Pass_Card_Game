@@ -64,6 +64,7 @@
   .player_2 {
     margin-right: calc(((100vw / 7) - 15px));
     grid-template-rows: 1px;
+    margin-top: calc((100vw / 7) * 1.5 * -1 * 0.75);
   }
 
   .player_4 {
