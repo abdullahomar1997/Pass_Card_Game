@@ -1,9 +1,10 @@
-import investment from '../assets/images/investment.svg'
-import propertyBond from '../assets/images/property_bond_2.svg'
-import basicLoan from '../assets/images/basic_loan.svg'
+import React from 'react'
 
-import "./styles.css"
+import investment from '../../assets/images/investment.svg'
+import propertyBond from '../../assets/images/property_bond_2.svg'
+import basicLoan from '../../assets/images/basic_loan.svg'
 
+import "./Home.css"
 
 function Home() {
     return (
